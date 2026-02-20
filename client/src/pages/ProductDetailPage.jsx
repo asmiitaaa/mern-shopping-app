@@ -98,7 +98,7 @@ function ProductDetailPage() {
 
           <div className="flex items-center gap-3 mb-6">
             <span className="text-4xl font-bold text-blue-600">
-              ${product.price}
+              ₹{product.price}
             </span>
             <span
               className={`px-3 py-1 rounded-full text-sm ${

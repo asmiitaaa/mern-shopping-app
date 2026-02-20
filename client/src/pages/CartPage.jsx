@@ -65,13 +65,13 @@ function CartPage() {
               />
 
               <div className="flex-1">
-                <Link to={`/products/${item.product._id}`}>
+                <Link to={`/products/₹{item.product._id}`}>
                   <h3 className="text-lg font-semibold text-gray-800 hover:text-blue-600">
                     {item.product.name}
                   </h3>
                 </Link>
                 <p className="text-gray-500 text-sm mt-1">
-                  ${item.product.price} each
+                  ₹{item.product.price} each
                 </p>
 
                 <div className="flex items-center gap-3 mt-3">
@@ -108,7 +108,7 @@ function CartPage() {
 
               <div className="text-right">
                 <p className="text-xl font-bold text-gray-800">
-                  ${(item.product.price * item.quantity).toFixed(2)}
+                  ₹{(item.product.price * item.quantity).toFixed(2)}
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@ function CartPage() {
             <div className="space-y-2 mb-4">
               <div className="flex justify-between text-gray-600">
                 <span>Subtotal</span>
-                <span>${calculateTotal().toFixed(2)}</span>
+                <span>₹{calculateTotal().toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-gray-600">
                 <span>Shipping</span>
@@ -136,7 +136,7 @@ function CartPage() {
             <div className="border-t pt-4 mb-6">
               <div className="flex justify-between text-xl font-bold text-gray-800">
                 <span>Total</span>
-                <span>${calculateTotal().toFixed(2)}</span>
+                <span>₹{calculateTotal().toFixed(2)}</span>
               </div>
             </div>
 

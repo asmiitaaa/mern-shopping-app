@@ -92,7 +92,7 @@ function WishlistPage() {
 
               <div className="flex items-center justify-between mt-4">
                 <span className="text-2xl font-bold text-blue-600">
-                  ${product.price}
+                  ₹{product.price}
                 </span>
 
                 <div className="flex gap-2">

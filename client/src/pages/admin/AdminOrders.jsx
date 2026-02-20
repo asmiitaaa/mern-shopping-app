@@ -95,7 +95,7 @@ function AdminOrders() {
                     <option value="cancelled">Cancelled</option>
                   </select>
                   <p className="text-xl font-bold text-gray-800 mt-2">
-                    ${order.totalPrice.toFixed(2)}
+                    ₹{order.totalPrice.toFixed(2)}
                   </p>
                 </div>
               </div>
@@ -109,7 +109,7 @@ function AdminOrders() {
                         {item.name} × {item.quantity}
                       </span>
                       <span className="font-medium">
-                        ${(item.price * item.quantity).toFixed(2)}
+                        ₹{(item.price * item.quantity).toFixed(2)}
                       </span>
                     </div>
                   ))}

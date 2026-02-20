@@ -283,7 +283,7 @@ function AdminProducts() {
                   {product.category}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                  ${product.price}
+                  ₹{product.price}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   {product.stock}

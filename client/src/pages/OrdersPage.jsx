@@ -81,7 +81,7 @@ function OrdersPage() {
                   {order.orderStatus}
                 </span>
                 <p className="text-xl font-bold text-gray-800 mt-2">
-                  ${order.totalPrice.toFixed(2)}
+                  ₹{order.totalPrice.toFixed(2)}
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ function OrdersPage() {
                       {item.name} × {item.quantity}
                     </span>
                     <span className="font-medium">
-                      ${(item.price * item.quantity).toFixed(2)}
+                      ₹{(item.price * item.quantity).toFixed(2)}
                     </span>
                   </div>
                 ))}
