@@ -10,7 +10,10 @@ const app = express();
 // Middleware MUST come first
 app.use(
   cors({
-    origin: ["https://your-vercel-url.vercel.app", "http://localhost:5173"],
+    origin: [
+      "https://mern-shopping-app-eta.vercel.app/",
+      "http://localhost:5173",
+    ],
     credentials: true,
   }),
 );
