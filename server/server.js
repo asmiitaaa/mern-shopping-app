@@ -8,7 +8,12 @@ dotenv.config();
 const app = express();
 
 // Middleware MUST come first
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://your-vercel-url.vercel.app", "http://localhost:5173"],
+    credentials: true,
+  }),
+);
 app.use(express.json());
 
 // Route imports
