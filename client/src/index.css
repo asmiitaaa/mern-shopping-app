@@ -1,13 +1,22 @@
 @import "tailwindcss";
 
 * {
-  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #f9fafb;
-  color: #111827;
+  font-family: "Poppins", sans-serif;
+  background-color: #fef3f8;
+  color: #1f1f1f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
 }

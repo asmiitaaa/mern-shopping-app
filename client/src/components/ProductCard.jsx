@@ -34,9 +34,9 @@ function ProductCard({ product }) {
       {/* Heart button - positioned absolutely over the image */}
       <button
         onClick={handleAddToWishlist}
-        className="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md hover:bg-red-50 transition z-10"
+        className="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md hover:bg-pink-50 transition z-10"
       >
-        <Heart size={20} className="text-red-500" />
+        <Heart size={20} className="text-pink-500" />
       </button>
 
       {/* Product Image */}
@@ -61,13 +61,13 @@ function ProductCard({ product }) {
         </p>
 
         <div className="flex items-center justify-between mt-4">
-          <span className="text-2xl font-bold text-blue-600">
+          <span className="text-2xl font-bold text-pink-500">
             ${product.price}
           </span>
 
           <button
             onClick={handleAddToCart}
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition flex items-center gap-2"
+            className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition flex items-center gap-2"
           >
             <ShoppingCart size={18} />
             Add to Cart

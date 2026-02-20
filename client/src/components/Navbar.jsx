@@ -17,7 +17,7 @@ function Navbar() {
     <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-blue-600">
+        <Link to="/" className="text-2xl font-bold text-pink-500">
           MyShop
         </Link>
 
@@ -29,7 +29,7 @@ function Navbar() {
               {/* Orders link */}
               <Link
                 to="/orders"
-                className="text-gray-600 hover:text-blue-600 font-medium transition"
+                className="text-gray-600 hover:text-pink-500 font-medium transition"
               >
                 Orders
               </Link>
@@ -45,11 +45,11 @@ function Navbar() {
               {/* Cart with badge */}
               <Link
                 to="/cart"
-                className="relative text-gray-600 hover:text-blue-600 transition"
+                className="relative text-gray-600 hover:text-pink-500 transition"
               >
                 <ShoppingCart size={22} />
                 {cartCount > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  <span className="absolute -top-2 -right-2 bg-pink-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                     {cartCount}
                   </span>
                 )}
@@ -77,13 +77,13 @@ function Navbar() {
             <>
               <Link
                 to="/login"
-                className="text-gray-600 hover:text-blue-600 font-medium transition"
+                className="text-gray-600 hover:text-pink-500 font-medium transition"
               >
                 Login
               </Link>
               <Link
                 to="/register"
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition"
               >
                 Register
               </Link>

@@ -40,8 +40,11 @@ function ProductsPage() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold text-gray-800 mb-8">All Products</h1>
-
+      {/* Hero Section */}
+      <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-3xl p-16 mb-16 text-center">
+        <h1 className="text-6xl font-bold text-gray-800">Asmita's Shop</h1>
+      </div>
+      {/* Products Grid */}
       {products.length === 0 ? (
         <div className="text-center text-gray-500 py-12">
           No products available
